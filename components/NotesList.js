@@ -1,9 +1,10 @@
-import Subtitle from "./widgets/subtitle";
-export const Note = ({ note }) => <li>{note}</li>;
+import Subtitle from "./ui/Subtitle";
+
+export const Note = ({ note }) => <li className="list-disc mb-2">{note}</li>;
 
 export const NotesList = ({ title, children }) => (
   <div>
     <Subtitle>{title}</Subtitle>
-    <ul>{children}</ul>
+    <ul className="list-inside">{children}</ul>
   </div>
 );

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Link from "next/link";
 
-const NavLink = ({ href, children }) => (
+interface NavLinkProps {
+  href: string;
+  children: ReactNode;
+}
+
+const NavLink = ({ href, children }: NavLinkProps) => (
   <Link href={href} className="p-2 mr-4 text-white">
     {children}
   </Link>
@@ -15,8 +20,8 @@ export default function Navbar() {
           reCAPTCHA Demo
         </Link>
         <div className="flex">
-          <NavLink href="/nocaptchapage">NoCaptcha</NavLink>
-          <NavLink href="/v2page">V2</NavLink>
+          <NavLink href="/v2notarobot">Not a Robot</NavLink>
+          <NavLink href="/v2invisiblepage">Invisible</NavLink>
           <NavLink href="/v3page">V3</NavLink>
         </div>
       </nav>

@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "./widgets/Title";
+import Title from "./ui/Title";
 
 export default function AboutDemo() {
   return (
@@ -17,7 +17,7 @@ export default function AboutDemo() {
         about demo options. best to run from incognito window to see reCAPTCHA
         behavior
       </p>
-      <p>configuring demo for your own domain</p>
+      <p>configuring demo for your own domain.</p>
     </div>
   );
 }
