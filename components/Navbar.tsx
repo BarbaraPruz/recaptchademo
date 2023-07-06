@@ -22,7 +22,6 @@ export default function Navbar() {
         <div className="flex">
           <NavLink href="/v2notarobot">Not a Robot</NavLink>
           <NavLink href="/v2invisiblepage">Invisible</NavLink>
-          <NavLink href="/v3page">V3</NavLink>
         </div>
       </nav>
     </header>

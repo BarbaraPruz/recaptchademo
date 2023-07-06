@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./ui/Title";
+import ExternalLink from "./ui/ExternalLink";
 
 export default function AboutDemo() {
   return (
@@ -12,12 +13,27 @@ export default function AboutDemo() {
           Google Developers Documentation
         </a>
       </p>
-      <p>about demo sw - next, (tailwind), vercel, react-google-recaptcha</p>
       <p>
-        about demo options. best to run from incognito window to see reCAPTCHA
-        behavior
+        This demo is a
+        <ExternalLink href="https://nextjs.org/">next.js</ExternalLink> app
+        using the
+        <ExternalLink href="https://www.npmjs.com/package/react-google-recaptcha">
+          react-google-recaptcha
+        </ExternalLink>
+        package to handle reCAPTCHA v2 verification.
+        <ExternalLink href="https://tailwindcss.com/">tailwindcss</ExternalLink>
+        is used for styling.
       </p>
-      <p>configuring demo for your own domain.</p>
+      <p>
+        To fully observe the reCAPTCHA behaviors, run the demo in an incognito
+        window.
+      </p>
+      <p>
+        If setting up the demo to run with your own reCAPTCHA, store the
+        corresponding site key in the env variables specified for each demo
+        page. When setting up reCAPTCHA local development environments, use
+        domain 127.0.0.1
+      </p>
     </div>
   );
 }
