@@ -1,5 +1,3 @@
-import { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 import Navbar from "../components/Navbar";
 import Title from "@/components/ui/Title";
 import Subtitle from "@/components/ui/Subtitle";
