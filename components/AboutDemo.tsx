@@ -5,7 +5,7 @@ import ExternalLink from "./ui/ExternalLink";
 export default function AboutDemo() {
   return (
     <div className="flex flex-col gap-5 max-w-2xl text-lg">
-      <Title>reCAPTCHA Demo</Title>
+      <Title>reCAPTCHA V2 Demo</Title>
       <p>
         Google reCAPTCHA is a free service that can protect your site from spam
         and abuse. To learn more about this service, check out the&nbsp;
