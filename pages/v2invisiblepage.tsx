@@ -13,7 +13,9 @@ export default function V2InvisiblePage() {
 
         <div className="container mb-20 grid grid-cols-2 gap-20">
           <div className="bg-white px-20 py-10">
-            <Subtitle additionalClasses="mb-10 text-center">Test Form</Subtitle>
+            <Subtitle additionalClasses="mb-10 text-center">
+              Test Form2
+            </Subtitle>
             <TestFormInvisible
               siteKey={
                 process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY_INVISIBLE || ""
